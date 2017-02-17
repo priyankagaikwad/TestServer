@@ -37,7 +37,7 @@ class TestUITests: XCTestCase {
         textField.tap()
         app.typeText("hello")
         
-        app.buttons["OK"].tap()
+        //app.buttons["OK"].tap()
         
         app.navigationBars["UIView"].children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
         
