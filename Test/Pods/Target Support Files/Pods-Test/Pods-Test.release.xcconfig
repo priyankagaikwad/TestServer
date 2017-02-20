@@ -1,9 +1,10 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Alamofire"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Alamofire" "$PODS_CONFIGURATION_BUILD_DIR/FileKit" "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD" "$PODS_CONFIGURATION_BUILD_DIR/OGVKit" "$PODS_CONFIGURATION_BUILD_DIR/SSZipArchive" "$PODS_CONFIGURATION_BUILD_DIR/SwiftyJSON" "$PODS_CONFIGURATION_BUILD_DIR/libnestegg" "$PODS_CONFIGURATION_BUILD_DIR/libogg" "$PODS_CONFIGURATION_BUILD_DIR/liboggz" "$PODS_CONFIGURATION_BUILD_DIR/libtheora" "$PODS_CONFIGURATION_BUILD_DIR/libvorbis" "${PODS_ROOT}/libvpx"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/libvpx"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Alamofire"
+OTHER_CFLAGS = -DOGVKIT_HAVE_OGG_DEMUXER -DOGVKIT_HAVE_THEORA_DECODER -DOGVKIT_HAVE_VP8_DECODER -DOGVKIT_HAVE_VORBIS_DECODER -DOGVKIT_HAVE_WEBM_DEMUXER $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Alamofire/Alamofire.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/FileKit/FileKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/OGVKit/OGVKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SSZipArchive/SSZipArchive.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwiftyJSON/SwiftyJSON.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/libnestegg/nestegg.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/libogg/ogg.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/liboggz/oggz.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/libtheora/theora.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/libvorbis/vorbis.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/libvpx"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "FileKit" -framework "MBProgressHUD" -framework "OGVKit" -framework "SSZipArchive" -framework "SwiftyJSON" -framework "VPX" -framework "nestegg" -framework "ogg" -framework "oggz" -framework "theora" -framework "vorbis"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
