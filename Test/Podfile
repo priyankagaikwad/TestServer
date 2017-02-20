@@ -11,22 +11,12 @@ source 'https://github.com/brion/OGVKit-Specs.git'
 target 'Test' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
   pod 'Alamofire', '~> 4.0'
-  pod 'SwiftyJSON'
-  pod 'MBProgressHUD', '~> 0.9.2'
-  pod 'FileKit', '~> 4.0.0'
-  #pod 'OpenSSL', '~> 1.0'
-  pod 'SSZipArchive', '1.5'
-  pod 'OGVKit', '0.5.3'  # Pods for Test
 
   target 'TestTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'Alamofire', '~> 4.0'
-    pod 'SwiftyJSON'
-    pod 'MBProgressHUD', '~> 0.9.2'
-    pod 'FileKit', '~> 4.0.0'
-    #pod 'OpenSSL', '~> 1.0'
-    pod 'SSZipArchive', '1.5'
+
   end
 
   target 'TestUITests' do

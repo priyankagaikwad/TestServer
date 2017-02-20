@@ -1,90 +1,12 @@
 PODS:
-  - Alamofire (4.2.0)
-  - FileKit (4.0.0)
-  - libnestegg (0.1)
-  - libogg (1.3.2)
-  - liboggz (1.1.1):
-    - libogg (>= 1.0)
-  - libtheora (1.1.1):
-    - libogg (>= 1.1)
-  - libvorbis (1.3.5):
-    - libogg (>= 1.0)
-  - libvpx (1.5.0-1021-g59ae167)
-  - MBProgressHUD (0.9.2)
-  - OGVKit (0.5.3):
-    - OGVKit/Core (= 0.5.3)
-    - OGVKit/libskeleton (= 0.5.3)
-    - OGVKit/Ogg (= 0.5.3)
-    - OGVKit/OggDemuxer (= 0.5.3)
-    - OGVKit/TheoraDecoder (= 0.5.3)
-    - OGVKit/VorbisDecoder (= 0.5.3)
-    - OGVKit/VP8Decoder (= 0.5.3)
-    - OGVKit/WebM (= 0.5.3)
-    - OGVKit/WebMDemuxer (= 0.5.3)
-  - OGVKit/Core (0.5.3)
-  - OGVKit/libskeleton (0.5.3):
-    - libogg
-  - OGVKit/Ogg (0.5.3):
-    - OGVKit/Ogg/Theora (= 0.5.3)
-    - OGVKit/Ogg/Vorbis (= 0.5.3)
-  - OGVKit/Ogg/Theora (0.5.3):
-    - OGVKit/OggDemuxer
-    - OGVKit/TheoraDecoder
-    - OGVKit/VorbisDecoder
-  - OGVKit/Ogg/Vorbis (0.5.3):
-    - OGVKit/OggDemuxer
-    - OGVKit/VorbisDecoder
-  - OGVKit/OggDemuxer (0.5.3):
-    - liboggz
-    - OGVKit/Core
-    - OGVKit/libskeleton (~> 0.4)
-  - OGVKit/TheoraDecoder (0.5.3):
-    - libtheora
-    - OGVKit/Core
-  - OGVKit/VorbisDecoder (0.5.3):
-    - libvorbis
-    - OGVKit/Core
-  - OGVKit/VP8Decoder (0.5.3):
-    - libvpx (~> 1.5.0-1021-g59ae167)
-    - OGVKit/Core
-  - OGVKit/WebM (0.5.3):
-    - OGVKit/WebM/Vorbis (= 0.5.3)
-    - OGVKit/WebM/VP8 (= 0.5.3)
-  - OGVKit/WebM/Vorbis (0.5.3):
-    - OGVKit/VorbisDecoder
-    - OGVKit/WebMDemuxer
-  - OGVKit/WebM/VP8 (0.5.3):
-    - OGVKit/VorbisDecoder
-    - OGVKit/VP8Decoder
-    - OGVKit/WebMDemuxer
-  - OGVKit/WebMDemuxer (0.5.3):
-    - libnestegg
-    - OGVKit/Core
-  - SSZipArchive (1.5)
-  - SwiftyJSON (3.1.3)
+  - Alamofire (4.3.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
-  - FileKit (~> 4.0.0)
-  - MBProgressHUD (~> 0.9.2)
-  - OGVKit (= 0.5.3)
-  - SSZipArchive (= 1.5)
-  - SwiftyJSON
 
 SPEC CHECKSUMS:
-  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
-  FileKit: 2589d0393b3bfdc599c2ba6e41419be6db4279e0
-  libnestegg: 29be3e4d84978423ab8a282476c099aa221d1c4e
-  libogg: 924cd993b3fcf4d93568f7d582496061ef82716e
-  liboggz: 6605f8cd394de0fe330957507179f6bdcce716d1
-  libtheora: cf6fb3c5c0db661460d0d54d0a343bc38dc766d3
-  libvorbis: ce9ba21bbef15c2060e31e1e33dcdeb3762427b0
-  libvpx: a5eeb44d068ae2f597eddf27a9fc097ac423b208
-  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
-  OGVKit: a85dabb8e8ec487d258939da9f26b33f57b1bc6b
-  SSZipArchive: 29daace2bccb90a47de2837744da397728ff9207
-  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
 
-PODFILE CHECKSUM: 875734f719350fab1c1a11d0e4802051370e98bb
+PODFILE CHECKSUM: deaa3a310a274e100a04e3a62ccae2125b134d69
 
 COCOAPODS: 1.2.0
