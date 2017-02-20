@@ -1,16 +1,32 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '9.0'
+use_frameworks!
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+# This line is needed until OGVKit is fully published to CocoaPods
+# Remove once packages published:
+source 'https://github.com/brion/OGVKit-Specs.git'
 
 target 'Test' do
   # Comment this line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
   pod 'Alamofire', '~> 4.0'
-  # Pods for Test
+  pod 'SwiftyJSON'
+  pod 'MBProgressHUD', '~> 0.9.2'
+  pod 'FileKit', '~> 4.0.0'
+  #pod 'OpenSSL', '~> 1.0'
+  pod 'SSZipArchive', '1.5'
+  pod 'OGVKit', '0.5.3'  # Pods for Test
 
   target 'TestTests' do
     inherit! :search_paths
     # Pods for testing
     pod 'Alamofire', '~> 4.0'
+    pod 'SwiftyJSON'
+    pod 'MBProgressHUD', '~> 0.9.2'
+    pod 'FileKit', '~> 4.0.0'
+    #pod 'OpenSSL', '~> 1.0'
+    pod 'SSZipArchive', '1.5'
   end
 
   target 'TestUITests' do
